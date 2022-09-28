@@ -61,12 +61,16 @@ const postSlice = createSlice({
           }
         }
       }
+    },
+    reactionAdded: (state, { payload }) => {
+      console.log(payload)
+
     }
   }
 })
 
 
-export const { postAdded } = postSlice.actions
+export const { postAdded, reactionAdded } = postSlice.actions
 
 export const selectAllPosts = (state) => state.posts
 

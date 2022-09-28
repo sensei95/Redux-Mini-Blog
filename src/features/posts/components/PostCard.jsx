@@ -10,7 +10,7 @@ const PostCard = ({ post }) => {
     </header>
     <p>{post.content.substring(0, 50)}</p>
     <PostAuthor userId={post.userId} />
-    <ReactionButtons reactions={post.reactions} />
+    <ReactionButtons reactions={post.reactions} postId={post.id} />
   </article>
 }
 
