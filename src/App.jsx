@@ -4,7 +4,7 @@ import AddPostForm from './features/posts/components/AddPostForm.jsx'
 export default function App() {
   return (
     <main>
-      <div className="grid lg:grid-cols-3 gap-6 w-10/12 mx-auto py-12">
+      <div className="grid lg:grid-cols-3 gap-x-12 w-10/12 mx-auto py-12">
         <ListPosts className="col-span-2" />
         <AddPostForm className="col-span-1" />
       </div>

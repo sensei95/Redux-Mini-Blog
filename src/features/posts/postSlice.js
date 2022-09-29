@@ -63,8 +63,12 @@ const postSlice = createSlice({
       }
     },
     reactionAdded: (state, { payload }) => {
-      console.log(payload)
 
+      state.find(post => {
+        if (post.id == payload.postId) {
+          post.reactions[payload.reaction]++
+        }
+      })
     }
   }
 })
